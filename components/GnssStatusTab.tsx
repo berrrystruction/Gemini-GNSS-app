@@ -75,7 +75,7 @@ const GnssStatusTab: React.FC = () => {
             </thead>
             <tbody>
               {satellites.map((sat, index) => (
-                <tr key={sat.svid} className={`border-b border-slate-700 transition-colors ${index % 2 === 0 ? 'bg-slate-700/40' : 'bg-transparent'} hover:bg-slate-700`}>
+                <tr key={sat.svid} className={`border-b border-slate-700 transition-colors ${index % 2 === 0 ? 'bg-sky-950/60' : 'bg-transparent'} hover:bg-sky-900`}>
                   <td className="p-2 font-mono">{sat.svid}</td>
                   <td className="p-2">{sat.constellation}</td>
                   <td className="p-2 font-mono">{sat.cn0.toFixed(1)}</td>

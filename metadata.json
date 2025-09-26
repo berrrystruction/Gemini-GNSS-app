@@ -1,0 +1,5 @@
+{
+  "name": "Sensor Dashboard GNSS & IMU",
+  "description": "An application that displays data from a smartphone's internal sensors. It shows real-time GNSS position on a map, IMU data (accelerometer and gyroscope), and simulated GNSS satellite signal information.",
+  "requestFramePermissions": []
+}

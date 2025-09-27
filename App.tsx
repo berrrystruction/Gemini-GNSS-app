@@ -22,7 +22,8 @@ const App: React.FC = () => {
     }
   };
   
-  const TabButton = ({ tab, label, icon }: { tab: Tab, label: string, icon: JSX.Element }) => (
+  // FIX: Replaced JSX.Element with React.ReactElement to resolve "Cannot find namespace 'JSX'" error.
+  const TabButton = ({ tab, label, icon }: { tab: Tab, label: string, icon: React.ReactElement }) => (
     <button
       onClick={() => setActiveTab(tab)}
       className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-sky-500 rounded-lg ${

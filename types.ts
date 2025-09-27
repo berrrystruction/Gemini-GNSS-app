@@ -1,4 +1,3 @@
-
 export enum Tab {
   Map,
   Imu,
@@ -33,4 +32,11 @@ export interface Satellite {
   elevation: number;
   azimuth: number;
   usedInFix: boolean;
+}
+
+export interface SensorHistoryPoint {
+  time: number;
+  x: number | null;
+  y: number | null;
+  z: number | null;
 }
